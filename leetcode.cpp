@@ -70,12 +70,34 @@ void test_4_median_of_two_sorted_arrays()
 	assert(median == 2.0);
 }
 
+void test_5_longest_palindrome()
+{
+	// 5. Longest Palindrome
+	longest_palindrome::Solution solution;
+
+	auto str = solution.longestPalindrome("ccc");
+
+	assert(str == "ccc");
+}
+
+void test_10_regular_expression()
+{
+	// 10. Regular Expression
+	regular_expression::Solution solution;
+
+	auto bMatched = solution.isMatch("aa", ".*");
+
+	assert(bMatched);
+}
+
 int _tmain(int argc, _TCHAR* argv[])
 {
 	test_1_two_sum();
 	test_2_add_two_numbers();
 	test_3_longest_substring_no_repeat();
 	test_4_median_of_two_sorted_arrays();
+	test_5_longest_palindrome();
+	test_10_regular_expression();
 	return 0;
 }
 
